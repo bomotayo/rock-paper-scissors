@@ -1,0 +1,180 @@
+.container{
+  background: rgb(245, 139, 139);
+  border: 1px solid black;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: 500px;
+  width: 90%;
+}
+
+.player-title,.computer-title,.user-count,.computer-count{
+  text-align: center;
+}
+.main-title{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
+.game-secs{
+  display: flex;
+  justify-content: space-around;
+  height: 700px;
+  margin-top: 2%;
+}
+#player-section{
+  background: rgba(173, 245, 139, 0.747);
+  width: 30%;
+  height: 450px;
+
+
+}
+#computer-section{
+  background: rgba(139, 215, 245, 0.747);
+  width: 30%;
+  height: 450px;
+}
+
+#game-btns{
+  position: absolute;
+  top: 20%;
+  left: 44%;
+}
+
+#game-btns button{
+  width: 150px;
+  height: 90px;
+  font-size: 20px;
+  margin-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#user-img,#comp-img{
+  position: relative;
+  left: 20%;
+  top: 5%;
+}
+
+#result{
+  background-color: white;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Phones*/
+@media only screen and (max-width: 400px) {
+  .container{
+    width: 100%;
+    margin-top: 25%;
+  }
+  #game-btns{
+    margin-left: -35%;
+    margin-top: 5px;
+  }
+  #game-btns button{
+    display: inline-block;
+    width: 45%;
+    height: 30px;
+    font-size: 15px;
+  }
+  #result{
+    padding: 0px;
+    width: 60%;
+    margin-left: 50px;
+  }
+  #player-section, #computer-section{
+    width: 90%;
+    height: 150px;
+    margin-top: 45%;
+  }
+  #user-img, #comp-img{
+    height: 70px;
+    position: relative;
+    top: -10px;
+    left: 32%;
+  }
+  .player-title,.computer-title,.user-count,.computer-count{
+    font-size: 20px;
+  }
+}
+
+/* Big Phones */
+@media only screen and (min-width: 400px) and  (max-width: 600px) {
+  .container{
+    width: 100%;
+    margin-top: 25%;
+  }
+  #game-btns{
+    margin-left: -30%;
+    margin-top: 0px;
+  }
+  #game-btns button{
+    display: inline-block;
+    width: 45%;
+    height: 30px;
+    font-size: 15px;
+  }
+  #result{
+    padding: 0px;
+    width: 60%;
+    margin-left: 50px;
+  }
+  #player-section, #computer-section{
+    width: 90%;
+    height: 150px;
+    margin-top: 45%;
+  }
+  #user-img, #comp-img{
+    height: 70px;
+    position: relative;
+    top: -10px;
+    left: 32%;
+  }
+  .player-title,.computer-title,.user-count,.computer-count{
+    font-size: 20px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 620px) and  (max-width: 1100px) {
+  #user-img, #comp-img{
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 28%;
+  }
+  #game-btns{
+    width: 15%;
+    margin-top: -10%;
+    margin-left: -8px;
+  }
+  #game-btns button{
+    width: 90%;
+    font-size: 18px;
+  }
+  .container{
+    margin-top: 15%;
+  }
+}
+@media only screen and (min-width: 1200px) and  (max-width: 1600px) {
+  #user-img, #comp-img{
+    position: relative;
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 1620px){
+  #user-img, #comp-img{
+    position: relative;
+    left: 30%;
+  }
+  #game-btns{
+    margin-top: -2%;
+    margin-left: 2%;
+  }
+}
